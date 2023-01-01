@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<title>Document</title>
+</head>
+<body>
+<center>
+<!-- 시간표 제목 -->
+<h1><strong>시간표!</strong></h1>
+
+<!-- 입력 -->
+<form method="post" action="index.html">
+	<!-- 요일 입력 -->
+	<select name="day" id="select_day">
+		<option value="1" selected>월요일
+		<option value="2">화요일
+		<option value="3">수요일
+		<option value="4">목요일
+		<option value="5">금요일
+	</select>
+
+	<!-- 시간대 입력 placeholder -->
+	<input type="text" id="start_time" value="0900" pattern="[0-9]{4}">
+	<strong> <font size="5px" color=""> ~ </font></strong>
+	<input type="text" id="end_time" value="1800" pattern="[0-9]{4}">
+	<strong> <font size="5px" color=""> : </font></strong>
+	<input type="text" id="time_name" value="일정 이름">
+	<input type="button" value="enter!" onclick="add_hour()">
+</form>
+default color: <input type="text" id="default_color" value="#ffff99">
+<br>
+</center>
+
+<!-- table -->
+<div class="table" >
+	<div class="first_floor">
+		<div class="blank">구분</div>
+		<div class="legend_day">금요일</div>
+		<div class="legend_day">목요일</div>
+		<div class="legend_day">수요일</div>
+		<div class="legend_day">화요일</div>
+		<div class="legend_day">월요일</div>
+	</div>
+	<div class="second_floor">
+		<div class="legend_time">9</div>
+		<div class="legend_time">10</div>
+		<div class="legend_time">11</div>
+		<div class="legend_time">12</div>
+		<div class="legend_time">13</div>
+		<div class="legend_time">14</div>
+		<div class="legend_time">15</div>
+		<div class="legend_time">16</div>
+		<div class="legend_time">17</div>
+		<div class="legend_time">18</div>
+		<div class="legend_time">19</div>
+		<div id="setter"></div>
+	</div>
+</div>
+<input type="button" value="save!" onclick="backup()">
+<input type="button" value="restore!" onclick="restore()" style="float:right;">
+<input type="file" id="input_file" style="float:right;">
+</body>
+</html>

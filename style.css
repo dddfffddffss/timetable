@@ -1,0 +1,49 @@
+.table {
+	position: relative;
+	width: 1000px; height: 550px;
+	left: 50%; margin-left: -500px;
+	background-color: #ffff99;
+	background-image: url("img/3.jpg");
+	background-size: cover;
+}
+.first_floor{
+	width: 1000px; 
+	height: 55px;
+	line-height: 55px; 
+	text-align: center;
+}
+.legend_day, .blank{
+	border: 1px solid blue;
+}
+.blank{
+	width: 48px; 
+	height: 53px; 
+	float: left;
+	background-color: red;
+}
+.legend_day{
+	width: 188px; 
+	height: 53px; 
+	float: right;
+	background-color: yellow;
+}
+.second_floor{
+	width: 1000px; 
+	height: 495px;
+	line-height: 45px; 
+	text-align: center;
+}
+.legend_time{
+	width: 48px; 
+	height: 43px;
+	border: 1px solid blue;
+	background-color: #ff6699;
+}
+#setter {
+	position: absolute;
+	top: 55px;
+	left: 50px;
+	width: 948px; 
+	height: 493px;
+	border: 1px solid blue;
+}
